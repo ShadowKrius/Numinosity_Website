@@ -91,7 +91,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 28px 48px;
+    padding: 22px 48px;
     background: linear-gradient(to bottom, rgba(7,8,15,0.9), transparent);
   }
 
@@ -123,7 +123,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 10vw;
+    padding: 120px 10vw 80px;
     position: relative;
     overflow: hidden;
   }
@@ -193,39 +193,6 @@
     animation: fadeUp 1s 0.8s forwards;
   }
 
-  .scroll-hint {
-    position: absolute;
-    bottom: 40px;
-    left: 10vw;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    font-family: var(--mono);
-    font-size: 10px;
-    letter-spacing: 0.15em;
-    color: var(--muted);
-    opacity: 0;
-    animation: fadeUp 1s 1.4s forwards;
-  }
-
-  .scroll-line {
-    width: 40px;
-    height: 1px;
-    background: var(--muted);
-    position: relative;
-    overflow: hidden;
-  }
-
-  .scroll-line::after {
-    content: '';
-    position: absolute;
-    top: 0; left: -100%;
-    width: 100%; height: 100%;
-    background: var(--lime);
-    animation: scanLine 2s 1.5s infinite;
-  }
-
-  @keyframes scanLine { to { left: 100%; } }
   @keyframes fadeUp   { to { opacity: 1; transform: translateY(0); } }
 
   /* ── CHAPTERS ──
@@ -379,17 +346,6 @@
   .chapter.visible .chapter-body p.body-text {
     opacity: 1;
     transform: translateY(0);
-  }
-
-  /* ── SECTION NUMBER ── */
-  .section-num {
-    position: absolute;
-    top: 48px;
-    right: 10vw;
-    font-family: var(--mono);
-    font-size: 11px;
-    letter-spacing: 0.15em;
-    color: rgba(255,255,255,0.1);
   }
 
   /* ── INTERSTITIAL ── */
@@ -644,8 +600,8 @@
 
     /* HERO: reduce vertical spacing and headline size */
     .hero {
-      padding: 36px 6vw;
-      min-height: 65vh;          /* shorter hero on phones */
+      padding: 90px 6vw 40px;
+      min-height: 65vh;
       display: block;
     }
 
@@ -756,15 +712,10 @@
     </h1>
     <p class="hero-sub">An AI platform connecting culture to products at the point of inspiration.</p>
   </div>
-  <div class="scroll-hint">
-    <span class="scroll-line"></span>
-    <span>Scroll to explore</span>
-  </div>
 </section>
 
 <!-- 01 A VISION -->
 <section class="chapter" id="ch1">
-  <div class="section-num">01</div>
   <div class="chapter-label">A Vision</div>
   <div class="chapter-body">
     <h2 class="chapter-headline">Before screens.<br>Before cities.<br>Before history had names.</h2>
@@ -776,7 +727,6 @@
 
 <!-- 02 THE ORIGINS -->
 <section class="chapter" id="ch2">
-  <div class="section-num">02</div>
   <div class="chapter-label">The Origins</div>
   <div class="chapter-body">
     <h2 class="chapter-headline">We gathered at firelight.<br>We shared what we saw.</h2>
@@ -788,7 +738,6 @@
 
 <!-- 03 THE QUESTION -->
 <section class="chapter" id="ch3">
-  <div class="section-num">03</div>
   <div class="chapter-label">The Question</div>
   <div class="chapter-body">
     <h2 class="chapter-headline">We placed ordinary humans inside extraordinary moments.</h2>
@@ -809,7 +758,6 @@
 
 <!-- 04 THE INSTINCT -->
 <section class="chapter" id="ch4">
-  <div class="section-num">04</div>
   <div class="chapter-label">The Instinct</div>
   <div class="chapter-body">
     <h2 class="chapter-headline">Centuries later, we wrote new stories.</h2>
@@ -821,7 +769,6 @@
 
 <!-- 05 THE PROOF -->
 <section class="chapter" id="ch5">
-  <div class="section-num">05</div>
   <div class="chapter-label">The Proof</div>
   <div class="chapter-body">
     <p class="chapter-pull" style="margin-bottom: 20px;">Nothing about this instinct has changed.</p>
@@ -833,7 +780,6 @@
 
 <!-- 06 THE GAP -->
 <section class="chapter" id="ch6">
-  <div class="section-num">06</div>
   <div class="chapter-label">The Gap</div>
   <div class="chapter-body">
     <h2 class="chapter-headline">But there is a gap.<br>Between feeling and getting something from that world.</h2>
@@ -846,7 +792,6 @@
 <!-- 07 THE DOORWAY -->
 <section class="chapter chapter-doorway" id="ch7">
   <div class="doorway-glow"></div>
-  <div class="section-num">07</div>
   <div class="chapter-label">The Doorway</div>
   <div class="chapter-body">
     <h2 class="chapter-headline">Numinosity is building that doorway.</h2>
